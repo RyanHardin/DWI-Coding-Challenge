@@ -5,7 +5,7 @@ import axios from 'axios';
 const Product = ({ items }) => {
     if (items) {
         return items.map(i => (
-            <div key={i.product.id} className="product">
+            <div key={i.product.id} className="item">
                 <input type="radio" id={i.product.id} name="listing" value={i.product.name} />
                 <label htmlFor={i.product.name}>{i.product.name} JUST {i.listPrice} {i.product.skus[0].numberOfBottles}</label>
             </div>

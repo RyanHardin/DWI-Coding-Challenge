@@ -7,7 +7,13 @@
     width: 100%;
 }
 
-.product{
+h1 {
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+}
+
+.item {
     padding: 5px;
 }
 
