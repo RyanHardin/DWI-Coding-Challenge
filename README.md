@@ -1,7 +1,4 @@
-# DWI-Coding-Challenge
-
-
-## Quickstart
+# Quickstart
 ```
 Install dependencies
 npm install
