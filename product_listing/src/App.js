@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import './App.css'
 import axios from 'axios';
 
 const Product = ({ items }) => {
     if (items) {
         return items.map(i => (
-            <div key={i.product.id}>
-                {i.product.name} JUST {i.listPrice} {i.product.skus[0].numberOfBottles}
+            <div key={i.product.id} className="product">
+                <input type="radio" id={i.product.id} name="listing" value={i.product.name} />
+                <label htmlFor={i.product.name}>{i.product.name} JUST {i.listPrice} {i.product.skus[0].numberOfBottles}</label>
             </div>
         ));
     }
@@ -25,7 +27,9 @@ function App() {
     return (
         <div className="container">
             <h1>Step 1: Which Case Would You Like?</h1>
-            <Product items={products} />
+            <div className="products">
+                <Product items={products} />
+            </div>
         </div>)
 }
 

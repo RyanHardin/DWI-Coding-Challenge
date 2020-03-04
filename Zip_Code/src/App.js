@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import './App.css'
 
-const App = () => (
-    <div className="container">
-        <h1>Hello World, React!</h1>
-    </div>
-)
+import Location from './components/Location'
+
+const App = () => {
+    return (
+        <div className="container">
+            <Location />
+        </div>
+    )
+}
 
 export default App;
