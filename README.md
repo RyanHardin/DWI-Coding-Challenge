@@ -54,7 +54,7 @@ GET Request - https://www.wsjwine.com/api/offer/0033008
 GET Request - https://www.wsjwine.com/api/address/zipcode/12345
 
 # Quickstart
-
+```
 Install dependencies
 npm install
 
@@ -63,3 +63,4 @@ npm start
 
 Build for production
 npm run build
+```
